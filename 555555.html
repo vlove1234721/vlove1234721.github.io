@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JOHN WICK SERIES</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .header {
+            margin-bottom: 80px;
+        }
+
+        .header img {
+            width: 100%;
+        }
+
+        .slogan {
+            margin: 50px 0px;
+            height: 80px;
+            width: 100%;
+            background-color: darkred;
+            color: white;
+            font-family: monospace;
+        }
+
+        .foTitle {
+            text-align: center;
+            color: darkseagreen;
+        }
+
+        .foBlock {
+            display: block;
+            width: 75%;
+            margin: auto;
+        }
+
+        .foDiscription {
+            color: white;
+            font-family: monospace;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!--class img-fluid使圖片尺寸依據父容器寬度自動縮放-->
+        <img src="wallpaper/johnwichchapter01.jpg" alt="john" class="img-fluid">
+    </header>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 text-center">
+                <h2 style="color: orangered"><strong>劇情介紹</strong></h2>
+                <p style="color: white">點擊了解劇情大意</p>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+                <h2 style="color: orangered"><strong>角色介紹</strong></h2>
+                <p style="color: white">點擊了解角色詳細</p>
+            </div>
+            <div class="col-12 col-md-4 text-center">
+                <h2 style="color: orangered"><strong>其它</strong></h2>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                        <span style="font-family: fantasy">相關網站</span>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="https://zh.wikipedia.org/wiki/%E6%8D%8D%E8%A1%9B%E4%BB%BB%E5%8B%99" target="_blank">WIKIPEDIA</a>
+                        <a class="dropdown-item" href="https://www.imdb.com/title/tt2911666/" target="_blank">IMDb</a>
+                        <a class="dropdown-item" href="https://www.rottentomatoes.com/m/john_wick" target="_blank">Rotten Tomatoes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid slogan">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="text-center" style="margin-top: 15px" onclick="btnClick(this)" data-attr="btn1"><strong>捍衛任務</strong></h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="foTitle"><strong>系列預告</strong></h2>
+            </div>
+            <div class="col-12 col-md-4">
+                <div style="padding: 20px; box-shadow: 0 3px 9px grey">
+                    <div class="foBlock">
+                        <img src="wallpaper/chapter2%20poster.jpg" alt="johnwick2" class="img-fluid" style="width: 100%;">
+                    </div>
+                    <div class="mt-2 mb-2">
+                        <h3 class="foDiscription">捍衛任務2 : 殺神回歸</h3>
+                    </div>
+                    <div class="mt-3">
+                        <button type="button" class="btn btn-lg btn-block" style="background-color: darkred; color: white;" onclick="btnClick(this)" data-attr="btn2">YOUTUBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 p-2">
+                <div style="padding: 20px; box-shadow: 0 3px 9px grey">
+                    <div class="foBlock">
+                        <img src="wallpaper/chapter3%20poster.jpg" alt="johnwick2" class="img-fluid" style="width: 100%;">
+                    </div>
+                    <div class="mt-2 mb-2">
+                        <h3 class="foDiscription">捍衛任務3 : 全面開戰</h3>
+                    </div>
+                    <div class="mt-3">
+                        <button type="button" class="btn btn-lg btn-block" style="background-color: darkred; color: white;" onclick="btnClick(this)" data-attr="btn3">YOUTUBE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 p-2">
+                <div style="padding: 20px; box-shadow: 0 3px 9px grey">
+                    <div class="foBlock">
+                        <img src="wallpaper/chapter4%20poster.jpg" alt="johnwick2" class="img-fluid" style="width: 100%;">
+                    </div>
+                    <div class="mt-2 mb-2">
+                        <h3 class="foDiscription">捍衛任務4</h3>
+                    </div>
+                    <div class="mt-3">
+                        <button type="button" class="btn btn-lg btn-block" style="background-color: darkred; color: white;">2021上映</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="mt-5 bg-dark" style="height: 60px; line-height: 60px;">
+        <p style="text-align: center; color: white; background-color: darkred; font-family: monospace; margin-bottom: 0px;">@ JOHN WICK SERIES</p>
+    </footer>
+
+    <script>
+        function btnClick(btn) {
+            if (btn.getAttribute('data-attr') === "btn1") {
+                window.open("https://youtu.be/C0BMx-qxsP4");
+            } else if (btn.getAttribute('data-attr') === "btn2") {
+                window.open("https://www.youtube.com/watch?v=XGk2EfbD_Ps");
+            } else {
+                window.open("https://www.youtube.com/watch?v=pU8-7BX9uxs");
+            }
+        }
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body></html>
