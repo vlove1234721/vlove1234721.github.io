@@ -33,6 +33,19 @@
             position: absolute;
             bottom: 20px;
         }
+        
+        /*設定回首頁*/
+        .backMain {
+            position: fixed;
+            width: 15%;
+            height: 15%;
+            background-image: url("wallpaper/backtomain.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            bottom: 0px;
+            right: 0px;
+        }
     </style>
 </head>
 
@@ -91,20 +104,20 @@
             </div>
         </div>
     </div>
-    
-    
+    <a href="555555.html"><div class="backMain"></div></a>
+
     <script>
         function imgClick(img) {
-            if (img.getAttribute('data-attr')==="img1") {
+            if (img.getAttribute('data-attr') === "img1") {
                 var element = document.getElementsByClassName("capTion1");
                 $(element).css("visibility", "visible");
-            } else if (img.getAttribute('data-attr')==="img2") {
+            } else if (img.getAttribute('data-attr') === "img2") {
                 var element = document.getElementsByClassName("capTion2");
                 $(element).css("visibility", "visible");
-            } else if (img.getAttribute('data-attr')==="img3") {
+            } else if (img.getAttribute('data-attr') === "img3") {
                 var element = document.getElementsByClassName("capTion3");
                 $(element).css("visibility", "visible");
-            } else if (img.getAttribute('data-attr')==="img4") {
+            } else if (img.getAttribute('data-attr') === "img4") {
                 var element = document.getElementsByClassName("capTion4");
                 $(element).css("visibility", "visible");
             } else {
@@ -113,7 +126,7 @@
             }
         }
     </script>
-    
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
